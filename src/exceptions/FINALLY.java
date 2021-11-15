@@ -8,6 +8,9 @@ package exceptions;
 /**
  *
  * @author Estudiante
+ *Por defecto se crea un error en este código, que es intentar convertir en entero un String que contiene
+ * el caracter "M", como no se puede hacer se captura el error y luego se ejecuta el fynally, 
+ * para demostrar que con este tipo de excepciónes el error no impide esta última ejecución
  */
 public class FINALLY {
 

@@ -11,6 +11,8 @@ import java.util.Stack;
 /**
  *
  * @author Estudiante
+ * En un ciclo infinito se reciben valores que se agregaran como elemnetos de una Pila de números enteros
+ * en caso de ingresar valores de otro tipo, se ejecuta la excepción.
  */
 public class Try {
     public static void main(String[] args) {
@@ -28,7 +30,7 @@ public class Try {
                 System.out.println();
             }
             catch (NumberFormatException ex){
-                System.out.println("Solo se pueden agregar números");
+                System.out.println("Solo se pueden agregar números enteros");
            }   
         }
     }

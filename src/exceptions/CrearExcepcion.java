@@ -10,6 +10,11 @@ import java.util.Scanner;
 /**
  *
  * @author Estudiante
+ * En un ciclo infinito se ejecuta un scanner
+ * capas de recibir cualquier expresión, a excepción del 1.
+ * Se hace de así para demostrar que se puede ejecutar 
+ * una excepción de forma arbitraria.
+ * 
  */
 public class CrearExcepcion {
 

@@ -10,6 +10,9 @@ import java.util.Scanner;
 /**
  *
  * @author Estudiante
+ * Se ejecuta un ciclo infinito el cual recibe un dividendo y un divisor para luego hacer la división
+ * la primer excepción contempla el caso de que se ingresen valores no númericos y la otra
+ * usando un objeto "throw", para ejecutar una excepción en caso de una división entre 0.
  */
 public class Throw {
 
@@ -26,7 +29,7 @@ public class Throw {
             }
             System.out.println(dividendo / divisor);
         } catch (IllegalArgumentException e) {
-            System.err.print(e);
+             System.err.print(e);
              System.out.println();
         }
     }
@@ -37,7 +40,7 @@ public class Throw {
                 Scanner leer = new Scanner(System.in);
                 String opc = leer.nextLine();
                 Throw.dividendo = Integer.parseInt(opc);
-                System.out.println("Ingrese el Divisor");
+                System.out.println("Ingrese el Divisor, si es un 0 arrojara una excepción");
                 Scanner leer2 = new Scanner(System.in);
                 String opc2 = leer2.nextLine();
                 Throw.divisor = Integer.parseInt(opc2);
